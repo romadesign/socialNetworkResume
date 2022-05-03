@@ -1,11 +1,11 @@
 export default {
     fields: [
       // Profile Image
-      // {
-      //   type: 'resume-image',
-      //   label: 'Resume Profile Image',
-      //   model: 'picture',
-      // },
+      {
+        type: 'resume-image',
+        label: 'Resume Profile Image',
+        model: 'picture',
+      },
       // Label
       {
         type: 'input',

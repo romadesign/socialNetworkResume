@@ -7,7 +7,7 @@ export default {
         placeholder: '2712 Broadway St',
         label: 'Address',
         model: 'address',
-        styleClasses: ['col-md-4', 'p-0', 'pl-md-1'],
+        styleClasses: ['col-12','col-md-4'],
       },
       // Postal Code
       {
@@ -16,7 +16,7 @@ export default {
         placeholder: 'CA 94115',
         label: 'Postal Code',
         model: 'postalCode',
-        styleClasses: ['col-md-4', 'p-0', 'pl-md-1'],
+        styleClasses: ['col-12','col-md-4'],
       },
       // City
       {
@@ -25,7 +25,7 @@ export default {
         placeholder: 'San Francisco',
         label: 'City',
         model: 'city',
-        styleClasses: ['col-md-4', 'p-0', 'pl-md-1'],
+        styleClasses: ['col-12','col-md-4'],
       },
       // Country Code
       {
@@ -34,7 +34,7 @@ export default {
         placeholder: 'US',
         label: 'Country Code',
         model: 'countryCode',
-        styleClasses: ['col-md-6', 'p-0', 'pl-md-1'],
+        styleClasses: ['col-12','col-md-6'],
       },
       // Region
       {
@@ -43,7 +43,7 @@ export default {
         placeholder: 'California',
         label: 'Region',
         model: 'region',
-        styleClasses: ['col-md-6', 'p-0', 'pl-md-1'],
+        styleClasses: ['col-12','col-md-6'],
       },
     ],
   };

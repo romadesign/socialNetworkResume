@@ -2,17 +2,17 @@
   <div class="container">
     <div class="vue-tabs-">
       <Tabs >
-        <Tab selected="true" title="home">
-          <div class="tab-pane">
+        <Tab selected="true" title="Basics">
             <VueFormGenerator
               :schema="schemas.basics"
               :model="resume.content.basics"
               :options="options"
             />
-          </div>
-        </Tab>
-        <Tab title="profiles">
-          <input placeholder="as" />
+            <VueFormGenerator
+              :schema="schemas.location"
+              :model="resume.content.basics.location"
+              :options="options"
+            />
         </Tab>
       </Tabs>
     </div>
@@ -20,11 +20,14 @@
 </template>
 
 <script>
+//component image
+import FieldResumeImage from './Image/FieldResumeImage.vue'
 //componente tabs
 import Tabs from "./tabs/Tabs.vue";
 import Tab from "./tabs/Tab.vue";
 //Schemas Json
 import basics from "./schema/basics/basics";
+import location from "./schema/basics/location";
 
 //vuefromGenerator
 import { component as VueFormGenerator } from "vue-form-generator";
@@ -36,6 +39,7 @@ export default {
     Tabs,
     Tab,
     VueFormGenerator,
+    FieldResumeImage,
   },
 
   data() {
@@ -43,12 +47,15 @@ export default {
       resume: {
         title: "",
         content: {
-          basics: {},
+          basics: {
+            location: {}
+          },
         },
       },
 
       schemas: {
         basics,
+        location,
       },
 
       options: {
