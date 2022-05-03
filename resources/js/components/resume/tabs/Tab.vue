@@ -1,38 +1,33 @@
 <template>
-   <div class="tab-pane" :class="{ 'active': active }">
-      <slot></slot>
-    </div>
-
+  <div v-show="isActive">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Tab",
+  title: "Tab",
 
-  data() {
+  data: () => {
     return {
-      active: this.active
+      isActive: false,
     };
   },
 
   props: {
-    active: {
-      type: String,
-      required: '',
-    },
     title: {
       type: String,
       required: true,
     },
+    selected: {
+      default: false,
+    },
+  },
+  mounted() {
+    this.isActive = this.selected;
   },
 };
 </script>
 
 <style scoped>
-.tab-pane {
-  display: none;
-}
-.tab-pane.active {
-  display: block;
-}
 </style>
