@@ -1,23 +1,22 @@
 <template>
-  <article>
+  <div>
     <nav>
-      <div class="nav nav-tabs">
+      <div class="nav nav-tabs d-flex justify-content-around">
         <button
           class="nav-link"
           v-for="(tab, index) in tabs"
           :key="index"
           :class="{ 'is-active': tab.isActive }"
           @click="selectTab(tab)"
-        > 
+        >
           {{ tab.title }}
         </button>
-        
       </div>
     </nav>
-    <div class="tab-content">
+    <div class="tab-content d-flex justify-content-around">
       <slot></slot>
     </div>
-  </article>
+  </div>
 </template>
 
 <script>
@@ -29,7 +28,7 @@ export default {
       tabs: [],
     };
   },
- 
+
   created: function () {
     this.tabs = this.$children;
   },
