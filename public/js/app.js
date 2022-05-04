@@ -5255,6 +5255,156 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue_form_generator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-form-generator */ "./node_modules/vue-form-generator/dist/vfg.js");
+/* harmony import */ var vue_form_generator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_form_generator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_form_generator_dist_vfg_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-form-generator/dist/vfg.css */ "./node_modules/vue-form-generator/dist/vfg.css");
+/* harmony import */ var _mixin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mixin */ "./resources/js/components/resume/Dynamic/mixin.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//vuefromGenerator
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "DynamicForm",
+  mixins: [_mixin__WEBPACK_IMPORTED_MODULE_2__["default"]],
+  components: {
+    VueFormGenerator: vue_form_generator__WEBPACK_IMPORTED_MODULE_0__.component
+  },
+  props: {
+    schema: {
+      type: Object,
+      required: true
+    },
+    subforms: {
+      type: Array,
+      required: false,
+      "default": function _default() {
+        return [];
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/Form.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/Form.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mixin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mixin */ "./resources/js/components/resume/Dynamic/mixin.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Form',
+  mixins: [_mixin__WEBPACK_IMPORTED_MODULE_0__["default"]],
+  data: function data() {
+    return {
+      push: function push() {
+        return '';
+      }
+    };
+  },
+  props: {
+    placeholder: {
+      type: String,
+      required: false,
+      "default": function _default() {
+        return '';
+      }
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Image/FieldResumeImage.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Image/FieldResumeImage.vue?vue&type=script&lang=js& ***!
@@ -5318,13 +5468,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Image_FieldResumeImage_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Image/FieldResumeImage.vue */ "./resources/js/components/resume/Image/FieldResumeImage.vue");
-/* harmony import */ var _tabs_Tabs_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabs/Tabs.vue */ "./resources/js/components/resume/tabs/Tabs.vue");
-/* harmony import */ var _tabs_Tab_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs/Tab.vue */ "./resources/js/components/resume/tabs/Tab.vue");
-/* harmony import */ var _schema_basics_basics__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./schema/basics/basics */ "./resources/js/components/resume/schema/basics/basics.js");
-/* harmony import */ var _schema_basics_location__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./schema/basics/location */ "./resources/js/components/resume/schema/basics/location.js");
-/* harmony import */ var vue_form_generator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-form-generator */ "./node_modules/vue-form-generator/dist/vfg.js");
-/* harmony import */ var vue_form_generator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(vue_form_generator__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var vue_form_generator_dist_vfg_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-form-generator/dist/vfg.css */ "./node_modules/vue-form-generator/dist/vfg.css");
+/* harmony import */ var _Dynamic_DynamicForm_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dynamic/DynamicForm.vue */ "./resources/js/components/resume/Dynamic/DynamicForm.vue");
+/* harmony import */ var _Dynamic_Form_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dynamic/Form.vue */ "./resources/js/components/resume/Dynamic/Form.vue");
+/* harmony import */ var _tabs_Tabs_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs/Tabs.vue */ "./resources/js/components/resume/tabs/Tabs.vue");
+/* harmony import */ var _tabs_Tab_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tabs/Tab.vue */ "./resources/js/components/resume/tabs/Tab.vue");
+/* harmony import */ var _schema_basics_basics__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./schema/basics/basics */ "./resources/js/components/resume/schema/basics/basics.js");
+/* harmony import */ var _schema_basics_location__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./schema/basics/location */ "./resources/js/components/resume/schema/basics/location.js");
+/* harmony import */ var _schema_basics_profiles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./schema/basics/profiles */ "./resources/js/components/resume/schema/basics/profiles.js");
+/* harmony import */ var _schema_work__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./schema/work */ "./resources/js/components/resume/schema/work.js");
+/* harmony import */ var _schema_education__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./schema/education */ "./resources/js/components/resume/schema/education.js");
+/* harmony import */ var _schema_skills__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./schema/skills */ "./resources/js/components/resume/schema/skills.js");
+/* harmony import */ var _schema_awards__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./schema/awards */ "./resources/js/components/resume/schema/awards.js");
+/* harmony import */ var vue_form_generator__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue-form-generator */ "./node_modules/vue-form-generator/dist/vfg.js");
+/* harmony import */ var vue_form_generator__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(vue_form_generator__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var vue_form_generator_dist_vfg_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vue-form-generator/dist/vfg.css */ "./node_modules/vue-form-generator/dist/vfg.css");
 //
 //
 //
@@ -5346,11 +5503,62 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//component image
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//component image and dynamicForm
+
+
  //componente tabs
 
 
  //Schemas Json
+
+
+
+
+
 
 
  //vuefromGenerator
@@ -5360,10 +5568,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "resume-form",
   components: {
-    Tabs: _tabs_Tabs_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    Tab: _tabs_Tab_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    VueFormGenerator: vue_form_generator__WEBPACK_IMPORTED_MODULE_5__.component,
-    FieldResumeImage: _Image_FieldResumeImage_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Tabs: _tabs_Tabs_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    Tab: _tabs_Tab_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    VueFormGenerator: vue_form_generator__WEBPACK_IMPORTED_MODULE_12__.component,
+    FieldResumeImage: _Image_FieldResumeImage_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    DynamicForm: _Dynamic_DynamicForm_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Form: _Dynamic_Form_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
     return {
@@ -5376,8 +5586,40 @@ __webpack_require__.r(__webpack_exports__);
         }
       },
       schemas: {
-        basics: _schema_basics_basics__WEBPACK_IMPORTED_MODULE_3__["default"],
-        location: _schema_basics_location__WEBPACK_IMPORTED_MODULE_4__["default"]
+        basics: _schema_basics_basics__WEBPACK_IMPORTED_MODULE_5__["default"],
+        location: _schema_basics_location__WEBPACK_IMPORTED_MODULE_6__["default"],
+        profiles: _schema_basics_profiles__WEBPACK_IMPORTED_MODULE_7__["default"],
+        work: _schema_work__WEBPACK_IMPORTED_MODULE_8__["default"],
+        education: _schema_education__WEBPACK_IMPORTED_MODULE_9__["default"],
+        skills: _schema_skills__WEBPACK_IMPORTED_MODULE_10__["default"],
+        awards: _schema_awards__WEBPACK_IMPORTED_MODULE_11__["default"]
+      },
+      //subComponentes Form
+      subforms: {
+        work: [{
+          component: _Dynamic_Form_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+          props: {
+            title: "Highlights",
+            self: "highlights",
+            placeholder: 'Started the company"'
+          }
+        }],
+        education: [{
+          component: _Dynamic_Form_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+          props: {
+            title: "Courses",
+            self: "courses",
+            placeholder: "DB1101 - Basic SQL"
+          }
+        }],
+        skills: [{
+          component: _Dynamic_Form_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+          props: {
+            title: "Keywords",
+            self: "keywords",
+            placeholder: "Javascript"
+          }
+        }]
       },
       options: {
         validateAfterLoad: true,
@@ -5561,6 +5803,115 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/components/resume/Dynamic/mixin.js":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/resume/Dynamic/mixin.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    model: {
+      type: Object,
+      required: false
+    },
+    self: {
+      type: String,
+      required: true
+    }
+  },
+  data: function data() {
+    return {
+      target: this.model,
+      prop: this.self,
+      push: function push() {
+        return {};
+      }
+    };
+  },
+  methods: {
+    add: function add() {
+      var _this$$data = this.$data,
+          target = _this$$data.target,
+          prop = _this$$data.prop,
+          push = _this$$data.push;
+
+      if (!target[prop]) {
+        this.$set(target, prop, []);
+      }
+
+      target[prop].push(push());
+    },
+    remove: function remove(i) {
+      var _this$$data2 = this.$data,
+          target = _this$$data2.target,
+          prop = _this$$data2.prop;
+
+      if (target[prop]) {
+        target[prop].splice(i, 1);
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/schema/awards.js":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/resume/schema/awards.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  fields: [// Title
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Title',
+    placeholder: 'Award Title',
+    model: 'title',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Date
+  {
+    type: 'input',
+    inputType: 'date',
+    label: 'Date',
+    model: 'date',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Awarder
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Awarder',
+    placeholder: 'Company',
+    model: 'awarder',
+    styleClasses: ['col-md-4', 'p-0']
+  }, // Summary
+  {
+    type: 'textArea',
+    inputType: 'text',
+    label: 'Summary',
+    placeholder: 'There is no spoon.',
+    model: 'summary'
+  }]
+});
+
+/***/ }),
+
 /***/ "./resources/js/components/resume/schema/basics/basics.js":
 /*!****************************************************************!*\
   !*** ./resources/js/components/resume/schema/basics/basics.js ***!
@@ -5685,6 +6036,211 @@ __webpack_require__.r(__webpack_exports__);
     label: 'Region',
     model: 'region',
     styleClasses: ['col-12', 'col-md-6']
+  }]
+});
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/schema/basics/profiles.js":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/resume/schema/basics/profiles.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  fields: [// Network
+  {
+    type: 'input',
+    inputType: 'text',
+    placeholder: 'Twitter',
+    label: 'Network',
+    model: 'network',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Username
+  {
+    type: 'input',
+    inputType: 'text',
+    placeholder: 'yourname',
+    label: 'Username',
+    model: 'username',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Url
+  {
+    type: 'input',
+    inputType: 'text',
+    placeholder: 'https://twitter.com/yourname',
+    label: 'Url',
+    model: 'url',
+    validator: 'url',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }]
+});
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/schema/education.js":
+/*!************************************************************!*\
+  !*** ./resources/js/components/resume/schema/education.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  fields: [// Institution
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Institution',
+    placeholder: 'University or Institution name',
+    model: 'institution',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Area
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Area',
+    placeholder: 'Computer Science',
+    model: 'area',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Study Type
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Study Type',
+    placeholder: 'Bachelor of Science',
+    model: 'studyType',
+    styleClasses: ['col-md-4', 'p-0']
+  }, // Start Date
+  {
+    type: 'input',
+    inputType: 'date',
+    format: 'YYYY-MM-DD HH:mm:ss',
+    label: 'Start Date',
+    model: 'startDate',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // End Date
+  {
+    type: 'input',
+    inputType: 'date',
+    format: 'YYYY-MM-DD HH:mm:ss',
+    label: 'End Date',
+    model: 'endDate',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // GPA
+  {
+    type: 'input',
+    inputType: 'number',
+    label: 'GPA',
+    model: 'gpa',
+    validor: 'number',
+    styleClasses: ['col-md-4', 'p-0']
+  }]
+});
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/schema/skills.js":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/resume/schema/skills.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  fields: [// Name
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Name',
+    placeholder: 'Web Development',
+    model: 'name',
+    styleClasses: ['col-md-6', 'p-0', 'pr-md-1']
+  }, // Level
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'level',
+    placeholder: 'Master',
+    model: 'level',
+    styleClasses: ['col-md-6', 'p-0']
+  }]
+});
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/schema/work.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/resume/schema/work.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  fields: [// Company
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Company',
+    placeholder: 'Company Name',
+    model: 'company',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Position
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Position',
+    placeholder: 'Job Title',
+    model: 'position',
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+  }, // Website
+  {
+    type: 'input',
+    inputType: 'text',
+    label: 'Website',
+    placeholder: 'https://company.com',
+    model: 'website',
+    validator: 'url',
+    styleClasses: ['col-md-4', 'p-0']
+  }, // Start Date
+  {
+    type: 'input',
+    inputType: 'date',
+    format: 'YYYY-MM-DD HH:mm:ss',
+    label: 'Start Date',
+    model: 'startDate',
+    styleClasses: ['col-md-6', 'p-0', 'pr-md-1']
+  }, // End Date
+  {
+    type: 'input',
+    inputType: 'date',
+    format: 'YYYY-MM-DD HH:mm:ss',
+    label: 'End Date',
+    model: 'endDate',
+    styleClasses: ['col-md-6', 'p-0']
+  }, // Summary
+  {
+    type: 'textArea',
+    inputType: 'text',
+    label: 'Summary',
+    placeholder: 'What was this job about?',
+    model: 'summary'
   }]
 });
 
@@ -28669,6 +29225,84 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./resources/js/components/resume/Dynamic/DynamicForm.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/resume/Dynamic/DynamicForm.vue ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _DynamicForm_vue_vue_type_template_id_64e894bc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DynamicForm.vue?vue&type=template&id=64e894bc& */ "./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=template&id=64e894bc&");
+/* harmony import */ var _DynamicForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DynamicForm.vue?vue&type=script&lang=js& */ "./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _DynamicForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _DynamicForm_vue_vue_type_template_id_64e894bc___WEBPACK_IMPORTED_MODULE_0__.render,
+  _DynamicForm_vue_vue_type_template_id_64e894bc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/resume/Dynamic/DynamicForm.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/Dynamic/Form.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/resume/Dynamic/Form.vue ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Form_vue_vue_type_template_id_274fca7b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form.vue?vue&type=template&id=274fca7b& */ "./resources/js/components/resume/Dynamic/Form.vue?vue&type=template&id=274fca7b&");
+/* harmony import */ var _Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Form.vue?vue&type=script&lang=js& */ "./resources/js/components/resume/Dynamic/Form.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Form_vue_vue_type_template_id_274fca7b___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Form_vue_vue_type_template_id_274fca7b___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/resume/Dynamic/Form.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/resume/Image/FieldResumeImage.vue":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/resume/Image/FieldResumeImage.vue ***!
@@ -28829,6 +29463,38 @@ component.options.__file = "resources/js/components/resume/tabs/Tabs.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DynamicForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DynamicForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DynamicForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/Dynamic/Form.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/resume/Dynamic/Form.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Form.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/Form.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/resume/Image/FieldResumeImage.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************!*\
   !*** ./resources/js/components/resume/Image/FieldResumeImage.vue?vue&type=script&lang=js& ***!
@@ -28919,6 +29585,40 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=template&id=64e894bc&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=template&id=64e894bc& ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DynamicForm_vue_vue_type_template_id_64e894bc___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DynamicForm_vue_vue_type_template_id_64e894bc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DynamicForm_vue_vue_type_template_id_64e894bc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DynamicForm.vue?vue&type=template&id=64e894bc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=template&id=64e894bc&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/resume/Dynamic/Form.vue?vue&type=template&id=274fca7b&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/resume/Dynamic/Form.vue?vue&type=template&id=274fca7b& ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_vue_vue_type_template_id_274fca7b___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_vue_vue_type_template_id_274fca7b___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_vue_vue_type_template_id_274fca7b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Form.vue?vue&type=template&id=274fca7b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/Form.vue?vue&type=template&id=274fca7b&");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/resume/Image/FieldResumeImage.vue?vue&type=template&id=945da9a2&scoped=true&":
 /*!**************************************************************************************************************!*\
   !*** ./resources/js/components/resume/Image/FieldResumeImage.vue?vue&type=template&id=945da9a2&scoped=true& ***!
@@ -28983,6 +29683,219 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_62c8bbf8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_62c8bbf8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Tabs.vue?vue&type=template&id=62c8bbf8&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/tabs/Tabs.vue?vue&type=template&id=62c8bbf8&scoped=true&");
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=template&id=64e894bc&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/DynamicForm.vue?vue&type=template&id=64e894bc& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "my-2 w-100" },
+    [
+      _vm._l(_vm.target[_vm.prop], function (form, i) {
+        return _c("div", { key: i, staticClass: "row mb-3" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _c(
+                "div",
+                { staticClass: "card-header d-flex justify-content-between" },
+                [
+                  _c("div", [
+                    _c("h3", [_vm._v(_vm._s(_vm.title) + " #" + _vm._s(i))]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger btn-block",
+                        on: {
+                          click: function ($event) {
+                            return _vm.remove(i)
+                          },
+                        },
+                      },
+                      [
+                        _vm._v("\n                Delete "),
+                        _c("i", { staticClass: "fa fa-trash" }),
+                      ]
+                    ),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "card-body" },
+                [
+                  _c("VueFormGenerator", {
+                    attrs: {
+                      schema: _vm.schema,
+                      model: _vm.target[_vm.prop][i],
+                      options: {
+                        validateAfterLoad: true,
+                        validateAfterChanged: true,
+                        validateAsync: true,
+                      },
+                    },
+                  }),
+                  _vm._v(" "),
+                  _vm._l(_vm.subforms, function (subform, j) {
+                    return _c(
+                      "div",
+                      { key: j },
+                      [
+                        _c(
+                          subform.component,
+                          _vm._b(
+                            { tag: "component" },
+                            "component",
+                            Object.assign(
+                              {},
+                              { model: _vm.target[_vm.prop][i] },
+                              subform.props
+                            ),
+                            false
+                          )
+                        ),
+                      ],
+                      1
+                    )
+                  }),
+                ],
+                2
+              ),
+            ]),
+          ]),
+        ])
+      }),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn btn-primary",
+          on: {
+            click: function ($event) {
+              return _vm.add()
+            },
+          },
+        },
+        [_vm._v("Add new")]
+      ),
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/Form.vue?vue&type=template&id=274fca7b&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/resume/Dynamic/Form.vue?vue&type=template&id=274fca7b& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card mt-3 mb-3" }, [
+    _c("div", { staticClass: "card-header" }, [_vm._v(_vm._s(_vm.title))]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "card-body" },
+      [
+        _vm._l(_vm.target[_vm.prop], function (input, i) {
+          return _c("div", { key: i, staticClass: "d-flex p-0" }, [
+            _c("div", { staticClass: "col-10" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.target[_vm.prop][i],
+                    expression: "target[prop][i]",
+                  },
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: _vm.placeholder },
+                domProps: { value: _vm.target[_vm.prop][i] },
+                on: {
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.target[_vm.prop], i, $event.target.value)
+                  },
+                },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-2 d-flex ms-2" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-danger ms-2",
+                  on: {
+                    click: function ($event) {
+                      return _vm.remove(i)
+                    },
+                  },
+                },
+                [_c("i", { staticClass: "fa fa-trash" })]
+              ),
+            ]),
+          ])
+        }),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-primary",
+              on: {
+                click: function ($event) {
+                  return _vm.add()
+                },
+              },
+            },
+            [_vm._v("\n\t\t\t\t\t\tadd\n\t\t\t\t\t")]
+          ),
+        ]),
+      ],
+      2
+    ),
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
 
 
 /***/ }),
@@ -29066,6 +29979,90 @@ var render = function () {
                     schema: _vm.schemas.location,
                     model: _vm.resume.content.basics.location,
                     options: _vm.options,
+                  },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "Tab",
+              { attrs: { title: "Profile" } },
+              [
+                _c("DynamicForm", {
+                  attrs: {
+                    title: "Profile",
+                    self: "profiles",
+                    model: _vm.resume.content.basics,
+                    schema: _vm.schemas.profiles,
+                  },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "Tab",
+              { attrs: { title: "Work" } },
+              [
+                _c("DynamicForm", {
+                  attrs: {
+                    title: "Work",
+                    self: "work",
+                    model: _vm.resume.content,
+                    schema: _vm.schemas.work,
+                    subforms: _vm.subforms.work,
+                  },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "Tab",
+              { attrs: { title: "Education" } },
+              [
+                _c("DynamicForm", {
+                  attrs: {
+                    title: "Education",
+                    self: "education",
+                    model: _vm.resume.content,
+                    schema: _vm.schemas.education,
+                    subforms: _vm.subforms.education,
+                  },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "Tab",
+              { attrs: { title: "Skills" } },
+              [
+                _c("DynamicForm", {
+                  attrs: {
+                    title: "Skills",
+                    self: "skills",
+                    model: _vm.resume.content,
+                    schema: _vm.schemas.skills,
+                    subforms: _vm.subforms.skills,
+                  },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "Tab",
+              { attrs: { title: "Awards" } },
+              [
+                _c("DynamicForm", {
+                  attrs: {
+                    title: "Awards",
+                    self: "awards",
+                    model: _vm.resume.content,
+                    schema: _vm.schemas.awards,
+                    subforms: _vm.subforms.awards,
                   },
                 }),
               ],
