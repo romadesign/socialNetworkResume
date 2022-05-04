@@ -1,9 +1,25 @@
 <template>
   <div class="container">
     <div class="vue-tabs-">
+      <div class="row d-flex">
+        <div class="form-group col-md-8">
+          <input
+            v-model="resume.title"
+            placeholder="Resume title"
+            required
+            autofocus
+            class="form-control w-100"
+          />
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-success btn-block" @click="submit()">
+            submit <i class="fa fa-upload"></i>
+          </button>
+        </div>
+      </div>
       <Tabs>
         <Tab selected="true" title="Basics" icon="fa fa-user">
-          <VueFormGenerator 
+          <VueFormGenerator
             :schema="schemas.basics"
             :model="resume.content.basics"
             :options="options"
@@ -49,7 +65,7 @@
             :subforms="subforms.skills"
           />
         </Tab>
-        <Tab title="Awards" icon="fa fa-trophy" >
+        <Tab title="Awards" icon="fa fa-trophy">
           <DynamicForm
             title="Awards"
             self="awards"
@@ -64,6 +80,8 @@
 </template>
 
 <script>
+import jsonresume from "./jsonresume";
+
 //component image and dynamicForm
 import FieldResumeImage from "./Image/FieldResumeImage.vue";
 import DynamicForm from "./Dynamic/DynamicForm.vue";
@@ -72,6 +90,7 @@ import Form from "./Dynamic/Form.vue";
 //componente tabs
 import Tabs from "./tabs/Tabs.vue";
 import Tab from "./tabs/Tab.vue";
+
 //Schemas Json
 import basics from "./schema/basics/basics";
 import location from "./schema/basics/location";
@@ -84,6 +103,7 @@ import awards from "./schema/awards";
 //vuefromGenerator
 import { component as VueFormGenerator } from "vue-form-generator";
 import "vue-form-generator/dist/vfg.css";
+
 export default {
   name: "resume-form",
 
@@ -94,18 +114,34 @@ export default {
     FieldResumeImage,
     DynamicForm,
     Form,
+    education,
+    awards,
+    skills,
+    jsonresume,
+  },
+
+  props: {
+    update: false,
+    resume: {
+      type: Object,
+      default: () => ({
+        id: null,
+        title: "Resume Title",
+        content: jsonresume,
+      }),
+    },
   },
 
   data() {
     return {
-      resume: {
-        title: "",
-        content: {
-          basics: {
-            location: {},
-          },
-        },
-      },
+      // resume: {
+      //   title: "",
+      //   content: {
+      //     basics: {
+      //       location: {},
+      //     },
+      //   },
+      // },
 
       schemas: {
         basics,
@@ -158,8 +194,15 @@ export default {
       },
     };
   },
-  mounted() {
-    console.log("Component mounted.");
+  methods: {
+    async submit() {
+      try {
+        const res = await axios.post('/resumes', this.resume);
+        console.log(res);
+      } catch (e) {
+        console.log(e.response.data);
+      }
+    },
   },
 };
 </script>

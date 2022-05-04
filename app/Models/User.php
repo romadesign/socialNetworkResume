@@ -79,4 +79,8 @@ class User extends Authenticatable
 		}
 		return false;
 	}
+
+	public function resumes() {
+		return $this->hasMany(Resume::class);
+	}
 }

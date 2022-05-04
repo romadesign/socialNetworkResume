@@ -7,5 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Resume extends Model
 {
-    use HasFactory;
+	use HasFactory;
+
+	protected $fillable = [
+		'title',
+		'content',
+	];
+
+	protected $cats = [
+		'content' => 'array'
+	];
+
+	public function user() {
+		return $this->belongsTo(User::class);
+	}
 }
