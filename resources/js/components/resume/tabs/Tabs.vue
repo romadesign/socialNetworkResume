@@ -8,7 +8,8 @@
           :key="index"
           :class="{ 'is-active': tab.isActive }"
           @click="selectTab(tab)"
-        >
+        > 
+          <i :class="tab.icon"></i>
           {{ tab.title }}
         </button>
       </div>
@@ -23,14 +24,22 @@
 export default {
   title: "Tabs",
   components: {},
+  props: {
+    // icon: {
+    //   type: String,
+    //   required: true,
+    // },
+  },
   data() {
     return {
       tabs: [],
+      icons: [],
     };
   },
 
   created: function () {
     this.tabs = this.$children;
+    this.icons = this.$children;
   },
   methods: {
     selectTab(selectedTab) {

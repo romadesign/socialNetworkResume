@@ -2,8 +2,8 @@
   <div class="container">
     <div class="vue-tabs-">
       <Tabs>
-        <Tab selected="true" title="Basics">
-          <VueFormGenerator
+        <Tab selected="true" title="Basics" icon="fa fa-user">
+          <VueFormGenerator 
             :schema="schemas.basics"
             :model="resume.content.basics"
             :options="options"
@@ -14,7 +14,7 @@
             :options="options"
           />
         </Tab>
-        <Tab title="Profile">
+        <Tab title="Profile" icon="fa fa-users">
           <DynamicForm
             title="Profile"
             self="profiles"
@@ -22,7 +22,7 @@
             :schema="schemas.profiles"
           />
         </Tab>
-        <Tab title="Work">
+        <Tab title="Work" icon="fa fa-briefcase">
           <DynamicForm
             title="Work"
             self="work"
@@ -31,7 +31,7 @@
             :subforms="subforms.work"
           />
         </Tab>
-        <Tab title="Education">
+        <Tab title="Education" icon="fa fa-graduation-cap">
           <DynamicForm
             title="Education"
             self="education"
@@ -40,7 +40,7 @@
             :subforms="subforms.education"
           />
         </Tab>
-        <Tab title="Skills">
+        <Tab title="Skills" icon="fa fa-lightbulb">
           <DynamicForm
             title="Skills"
             self="skills"
@@ -49,7 +49,7 @@
             :subforms="subforms.skills"
           />
         </Tab>
-        <Tab title="Awards">
+        <Tab title="Awards" icon="fa fa-trophy" >
           <DynamicForm
             title="Awards"
             self="awards"

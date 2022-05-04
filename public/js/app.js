@@ -5660,6 +5660,10 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   props: {
+    icon: {
+      type: String,
+      required: true
+    },
     title: {
       type: String,
       required: true
@@ -5707,16 +5711,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   title: "Tabs",
   components: {},
+  props: {// icon: {
+    //   type: String,
+    //   required: true,
+    // },
+  },
   data: function data() {
     return {
-      tabs: []
+      tabs: [],
+      icons: []
     };
   },
   created: function created() {
     this.tabs = this.$children;
+    this.icons = this.$children;
   },
   methods: {
     selectTab: function selectTab(selectedTab) {
@@ -29964,7 +29976,13 @@ var render = function () {
           [
             _c(
               "Tab",
-              { attrs: { selected: "true", title: "Basics" } },
+              {
+                attrs: {
+                  selected: "true",
+                  title: "Basics",
+                  icon: "fa fa-user",
+                },
+              },
               [
                 _c("VueFormGenerator", {
                   attrs: {
@@ -29987,7 +30005,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "Tab",
-              { attrs: { title: "Profile" } },
+              { attrs: { title: "Profile", icon: "fa fa-users" } },
               [
                 _c("DynamicForm", {
                   attrs: {
@@ -30003,7 +30021,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "Tab",
-              { attrs: { title: "Work" } },
+              { attrs: { title: "Work", icon: "fa fa-briefcase" } },
               [
                 _c("DynamicForm", {
                   attrs: {
@@ -30020,7 +30038,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "Tab",
-              { attrs: { title: "Education" } },
+              { attrs: { title: "Education", icon: "fa fa-graduation-cap" } },
               [
                 _c("DynamicForm", {
                   attrs: {
@@ -30037,7 +30055,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "Tab",
-              { attrs: { title: "Skills" } },
+              { attrs: { title: "Skills", icon: "fa fa-lightbulb" } },
               [
                 _c("DynamicForm", {
                   attrs: {
@@ -30054,7 +30072,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "Tab",
-              { attrs: { title: "Awards" } },
+              { attrs: { title: "Awards", icon: "fa fa-trophy" } },
               [
                 _c("DynamicForm", {
                   attrs: {
@@ -30156,7 +30174,10 @@ var render = function () {
                 },
               },
             },
-            [_vm._v("\n        " + _vm._s(tab.title) + "\n      ")]
+            [
+              _c("i", { class: tab.icon }),
+              _vm._v("\n        " + _vm._s(tab.title) + "\n      "),
+            ]
           )
         }),
         0
