@@ -216,8 +216,20 @@ export default {
         console.log(res);
         window.location = "/home";
       } catch (e) {
-        console.log(e.response.data);
-        this.alert.messages = ["error", "asd"];
+        this.alert.messages = [];
+        const errors = e.response.data.errors;
+        for (const [prop, value] of Object.entries(errors)) {
+          const origin = prop.split(".");
+          if (origin[0] === "content") {
+            origin.splice(0, 1);
+          }
+          origin = origin.join(" > ");
+          for (const error of value) {
+            const message = error.replace(prop, `<strong>${origin}</strong>`);
+            this.alert.messages.push(message);
+          }
+        }
+        this.alert.type = "danger";
       }
     },
   },

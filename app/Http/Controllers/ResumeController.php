@@ -15,11 +15,18 @@ class ResumeController extends Controller
 	{
 		$this->middleware('auth');
 	}
+
+	public function index()
+	{
+		$resumes = auth()->user()->resumes;
+		return view('resumes.index', compact('resumes'));
+	}
+
 	public function create()
 	{
-		// $resume = json_encode(Resume::factory()->make());
-		// return view('resumes.create', compact('resume'));
-		return view('resumes.create');
+		$resume = json_encode(Resume::factory()->make());
+		return view('resumes.create', compact('resume'));
+		//return view('resumes.create');
 	}
 
 	private function savePicture($blob)
