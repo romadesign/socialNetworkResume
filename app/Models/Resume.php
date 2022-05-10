@@ -14,11 +14,12 @@ class Resume extends Model
 		'content',
 	];
 
-	protected $cats = [
-		'content' => 'array'
+	protected $casts = [
+		'content' => 'array',
 	];
 
-	public function user() {
+	public function user()
+	{
 		return $this->belongsTo(User::class);
 	}
 }

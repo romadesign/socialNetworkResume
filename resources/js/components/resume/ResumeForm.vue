@@ -1,6 +1,11 @@
 <template>
   <div class="container">
     <div class="vue-tabs-">
+      <Alert
+        v-if="alert.messages.length !== 0"
+        :messages="alert.messages"
+        :type="alert.type"
+      />
       <div class="row d-flex">
         <div class="form-group col-md-8">
           <input
@@ -81,6 +86,7 @@
 
 <script>
 import jsonresume from "./jsonresume";
+import Alert from "../reusable/Alert";
 
 //component image and dynamicForm
 import FieldResumeImage from "./Image/FieldResumeImage.vue";
@@ -118,6 +124,7 @@ export default {
     awards,
     skills,
     jsonresume,
+    Alert,
   },
 
   props: {
@@ -142,7 +149,10 @@ export default {
       //     },
       //   },
       // },
-
+      alert: {
+        type: "warning",
+        messages: [],
+      },
       schemas: {
         basics,
         location,
@@ -197,10 +207,12 @@ export default {
   methods: {
     async submit() {
       try {
-        const res = await axios.post('/resumes', this.resume);
+        const res = await axios.post("/resumes", this.resume);
         console.log(res);
+        window.location = "/home";
       } catch (e) {
         console.log(e.response.data);
+        this.alert.messages = ["error", "asd"];
       }
     },
   },
