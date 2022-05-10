@@ -53,7 +53,7 @@ class ResumePolicy
      */
     public function update(User $user, Resume $resume)
     {
-        //
+        return $user->id === $resume->user->id;
     }
 
     /**
@@ -65,7 +65,7 @@ class ResumePolicy
      */
     public function delete(User $user, Resume $resume)
     {
-        //
+        return $user->id === $resume->user->id;
     }
 
     /**

@@ -207,7 +207,12 @@ export default {
   methods: {
     async submit() {
       try {
-        const res = await axios.post("/resumes", this.resume);
+        const res = this.update
+          ? await axios.put(
+              route("resumes.update", this.resume.id),
+              this.resume
+            )
+          : await axios.post(route("resumes.store"), this.resume);
         console.log(res);
         window.location = "/home";
       } catch (e) {

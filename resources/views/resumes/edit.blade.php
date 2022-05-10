@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="container">
-    <resume-form />
-    {{--<resume-form :resume="{{ $resume }}" />--}}
+    <resume-form :resume="{{ $resume }}" :update="true" />
 </div>
 @endsection

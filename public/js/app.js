@@ -5705,28 +5705,46 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.prev = 0;
-                _context.next = 3;
-                return axios.post("/resumes", _this.resume);
 
-              case 3:
-                res = _context.sent;
-                console.log(res);
-                window.location = "/home";
-                _context.next = 12;
+                if (!_this.update) {
+                  _context.next = 7;
+                  break;
+                }
+
+                _context.next = 4;
+                return axios.put(route("resumes.update", _this.resume.id), _this.resume);
+
+              case 4:
+                _context.t0 = _context.sent;
+                _context.next = 10;
                 break;
 
-              case 8:
-                _context.prev = 8;
-                _context.t0 = _context["catch"](0);
-                console.log(_context.t0.response.data);
+              case 7:
+                _context.next = 9;
+                return axios.post(route("resumes.store"), _this.resume);
+
+              case 9:
+                _context.t0 = _context.sent;
+
+              case 10:
+                res = _context.t0;
+                console.log(res);
+                window.location = "/home";
+                _context.next = 19;
+                break;
+
+              case 15:
+                _context.prev = 15;
+                _context.t1 = _context["catch"](0);
+                console.log(_context.t1.response.data);
                 _this.alert.messages = ["error", "asd"];
 
-              case 12:
+              case 19:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 8]]);
+        }, _callee, null, [[0, 15]]);
       }))();
     }
   }
